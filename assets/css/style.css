@@ -1,0 +1,552 @@
+/* Stylink for the whole page */
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(49, 48, 48);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background: #757171;
+}
+
+.allsections {
+  background: url("../img/background.jpg");
+  background-attachment: fixed;
+}
+
+/* open division */
+.open {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: rgb(43, 255, 0);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+nav ul li a.active {
+  color: rgb(43, 255, 0);
+}
+
+nav ul li a:hover {
+  color: rgb(43, 255, 0);
+  transition: 0.4s;
+}
+
+.intro {
+  color: white;
+  position: relative;
+  top: 200px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 110px;
+}
+
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 85px;
+  font-family: "Tangerine", cursive;
+}
+
+.intro h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  color: rgb(113, 194, 97);
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+#icon {
+  font-size: 33px;
+  display: none;
+  cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+
+/* About me division */
+.about {
+  margin: 0%;
+  width: 100%;
+}
+
+.title {
+  padding-left: 50px;
+  padding-top: 70px;
+}
+
+.title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0;
+  letter-spacing: 1px;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Courgette", cursive;
+}
+
+.title h2::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  display: inline-block;
+  background: rgb(43, 255, 0);
+  margin: 4px 10px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+.box {
+  position: relative;
+  margin: 10px;
+  padding: 15px;
+  height: fit-content;
+}
+
+.img {
+  background-image: url("../img/me.jpg");
+  height: 600px;
+  width: 400px;
+  margin: 10px;
+  margin-left: 75px;
+  border-radius: 25px;
+  border: 2px solid rgb(43, 255, 0);
+}
+
+.i {
+  position: absolute;
+  font-size: 2em;
+  margin: 40vh 8vh 0 80vh;
+  font-family: "Bad Script", cursive;
+
+}
+
+.box ul {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+.box ul li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.box ul li strong {
+  font-size: 25px;
+}
+
+.box ul li span {
+  margin-right: 5px;
+}
+
+
+
+/* Skill Division */
+.skill {
+  margin: 0%;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px;
+  justify-content: center;
+}
+
+.cards_item {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 20px;
+  height: 100px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #1a1919;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  transition: 0.2s ease-in-out;
+}
+
+.cards_item:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+.cards .fab {
+  font-size: 60px;
+  margin: 20px;
+  color: rgb(43, 255, 0);
+}
+
+.per {
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 300px;
+  margin-top: 50px;
+  position: absolute;
+  font-family: "Bad Script", cursive;
+}
+
+
+
+/* Resume Division */
+.resume {
+  margin: 0%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding: 10px;
+  padding-left: 120px;
+  font-size: 1.3em;
+}
+
+.col {
+  height: fit-content;
+  width: 60%;
+  margin-right: 40px;
+}
+
+.data {
+  margin: 30px;
+  padding: 10px;
+}
+
+.data h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.data .part {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.data .part .heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.data .part .date {
+  background-color: #1a1919;
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 0 10px 0 10px;
+}
+
+.data .part p {
+  margin-bottom: 15px;
+}
+
+.data .part p a {
+  text-decoration: none;
+  color: rgb(43, 255, 0);
+}
+
+.data .part ul {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.data .part ul li {
+  margin: 5px;
+}
+
+.data .part .heading::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(43, 255, 0);
+  border-radius: 50%;
+  margin-left: -30px;
+  margin-top: 5px;
+}
+
+.resume .button {
+  display: flex;
+  justify-content: center;
+}
+
+.resume .button button {
+  font-size: 1.7em;
+  color: rgb(43, 255, 0);
+  height: 60px;
+  width: 190px;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-radius: 10px 0 10px;
+  border: 2px solid rgb(43, 255, 0);
+}
+
+.resume .button button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.2);
+  background: transparent;
+  color: rgb(43, 255, 0);
+  border-radius: 0 10px 0 10px;
+  border: 2px solid rgb(43, 255, 0);
+}
+
+/* Project Division */
+
+.testimonial{
+  margin: 100px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.testimonial .pcard{
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  height: 50vh;
+  background: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  overflow: hidden;
+  border: 2px solid rgb(43, 255, 0);
+  border-radius: 10px;
+}
+
+.testimonial .pcard .layer{
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(43, 255, 0, 0.4), rgba(0, 0, 0, 1), rgba(43, 255, 0, 0.4));
+  z-index: 1;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.testimonial .pcard:hover .layer{
+  top: 0;
+}
+
+.testimonial a {
+  text-decoration: none;
+}
+
+.testimonial .pcard .content{
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial .pcard .content p{
+  font-size: 2.5em;
+}
+
+.testimonial .pcard .content i {
+  font-size: 5em;
+  color: rgb(43, 255, 0);
+  background: black;
+  margin: 25px;
+  padding: 25px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+}
+
+/* contact me division */
+.contact {
+  margin: 0%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  background-color: #1a1919;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
+  margin: 50px 200px 0 200px;
+  border-radius: 10px;
+}
+
+.card .details .fab,
+.share i {
+  font-size: 40px;
+  color: rgb(43, 255, 0);
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid rgb(43, 255, 0);
+  border-radius: 50%;
+}
+
+.card .details .fab:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.details p {
+  color: white;
+  font-size: 2pc;
+  margin: 15px;
+}
+
+.card1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 50px 200px 0 200px;
+  border-radius: 10px;
+}
+
+.card1 p {
+  font-size: 2em;
+  padding: 10px;
+}
+
+.card1 h3 {
+  padding-bottom: 20px;
+  font-family: 'Times New Roman';
+}
+
+.card1 .details1 {
+  background-color: #1a1919;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.card1 .details2 {
+  background-color: #1a1919;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.card1 .share {
+  margin-top: 10px;
+}
+
+
+/* Footer Division */
+
+.footer {
+  background: url("../img/footor.jpg");
+  color: white;
+}
+
+.footer .foot {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.footer {
+  padding-bottom: 30px;
+}
+
+.foot .name p span {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5em;
+}
+
+.foot .link {
+  margin: 30px;
+  margin-bottom: 30px;
+}
+
+.foot .link a {
+  padding: 10px;
+}
+
+.copyright p {
+  padding: 6px;
+}
+
+.foot .link a .fab {
+  margin: 5px;
+  padding: 15px;
+  font-size: 35px;
+  background-color: rgb(43, 255, 0);
+  color: black;
+  border-radius: 50%;
+}
+
+.foot .link a :hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
